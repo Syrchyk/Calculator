@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="375" Width="300">
+    <DockPanel Background="CadetBlue">
+        <Grid DockPanel.Dock="Top" Margin="15,0" Background="CadetBlue">
+            <StackPanel>
+                <TextBox Name="textBox2" HorizontalContentAlignment="Right"></TextBox>
+                <TextBox Name="textBox1" FontSize="20" HorizontalContentAlignment="Right"></TextBox>
+            </StackPanel>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Background="CadetBlue">
+            <UniformGrid Rows="5" Columns="4" Margin="10,0,10, 10">
+                <Button Name="CEB" Margin="5" Click="CEB_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">CE</TextBlock>
+                </Button>
+                <Button Name="CB" Margin="5" Click="CB_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">C</TextBlock>
+                </Button>
+                <Button Name="BackB" Margin="5" Click="BackB_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">←</TextBlock>
+                </Button>
+                <Button Margin="5" Click="ButtonNonNumber_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">/</TextBlock>
+                </Button>
+
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">7</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">8</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">9</TextBlock>
+                </Button>
+                <Button Margin="5" Click="ButtonNonNumber_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">*</TextBlock>
+                </Button>
+
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">4</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">5</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">6</TextBlock>
+                </Button>
+                <Button Margin="5" Click="ButtonNonNumber_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">-</TextBlock>
+                </Button>
+
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">1</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">2</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">3</TextBlock>
+                </Button>
+                <Button Margin="5" Click="ButtonNonNumber_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">+</TextBlock>
+                </Button>
+
+
+                <Button Name="PlusMinus" Margin="5" Click="PlusMinus_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">+/-</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">0</TextBlock>
+                </Button>
+                <Button Margin="5" Click="Button_Click">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold">,</TextBlock>
+                </Button>
+                <Button Name="Equal" Margin="5" Click="Equal_Click" Background="Blue">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" FontWeight="Bold" Foreground="White">=</TextBlock>
+                </Button>
+
+            </UniformGrid>
+        </Grid>
+    </DockPanel>
+</Window>
